@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/salary-script.js"></script>
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <title>Salary Calculator</title>
+  </head>
+  <body>
+    <div class="headerTitle">
+      <h1>Salary Calculator</h1>
+    </div>
+    <!-- Add employee container -->
+    <main>
+      <h2>Add Employee</h2>
+      <div class="forms-container">
+        <input
+          class="employeeForm firstNameInput"
+          type="text"
+          placeholder="First Name"
+        />
+        <input
+          class="employeeForm lastNameInput"
+          type="text"
+          placeholder="Last Name"
+        />
+        <input
+          class="employeeForm idNumberInput"
+          type="text"
+          placeholder="ID"
+        />
+        <input
+          class="employeeForm titleInput"
+          type="text"
+          placeholder="Title"
+        />
+        <input
+          class="employeeForm annualSalaryInput"
+          type="number"
+          placeholder="Annual Salary"
+        />
+        <button class="submitButton">Submit</button>
+      </div>
+      <!-- Table  -->
+      <div class="employeesInfoContainer">
+        <h3>Employees</h3>
+        <table>
+          <!-- Table header -->
+          <thead>
+            <tr class="headerContainer">
+              <th class="headerTitleText">First Name</th>
+              <th class="headerTitleText">Last Name</th>
+              <th class="headerTitleText">ID</th>
+              <th class="headerTitleText">Title</th>
+              <th class="headerTitleText">Annual Salary</th>
+              <th></th>
+            </tr>
+          </thead>
+
+          <!-- Table rows for jQuery data -->
+          <tbody class="employeesRows">
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="deleteBtn"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="totalMonthly">
+        <h3>Total Monthly: <span class="totalMonthlyOut"></span></h3>
+      </div>
+    </main>
+  </body>
+</html>
