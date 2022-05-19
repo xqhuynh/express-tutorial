@@ -12,3 +12,5 @@ let quoteList = [
     author: "Martin Luther King, Jr.",
   },
 ];
+
+module.exports = quoteList;
